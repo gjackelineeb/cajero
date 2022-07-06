@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:f="http://java.sun.com/jsf/core">
+   
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Cajero Automatico - Prueba</title>
+</h:head>
+<h:body>
+   <h3> Bienvenido al sistema </h3>
+   <h:form>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<h:commandLink value="Retiro" action="retiro.jsf"></h:commandLink>
+						</td>
+					</tr>
+					<tr>
+					  	<td>
+							<h:commandLink value="Listado de clientes" action="listadoC.jsf"></h:commandLink>
+						</td>
+					</tr>
+					<tr>
+					  	<td>
+							<h:commandLink value="Solicitar Libro Prestado" action="prestamo.jsf"></h:commandLink>
+						</td>
+					</tr>
+					<tr>
+					  	<td>
+							<h:commandLink value="Lista de Libros Prestados" action="listadoPrestamos.jsf"></h:commandLink>
+						</td>
+					</tr>
+				</tbody>
+			
+			</table>
+		</h:form>
+   
+</h:body>
+</html>

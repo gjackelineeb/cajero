@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core">
+	<h:head>
+	  	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title>Ingrese sus datos</title>
+	</h:head>
+	<h:body>
+		<h3>Ingrese sus datos</h3>
+		<h:form>
+			<h:outputText value="#{libros.mensaje}"></h:outputText>
+			<p>
+				<label>Cuenta:
+					<h:inputText name="#{clientes.numeroCuenta}"></h:inputText>
+				</label>
+			</p>
+			
+			<p>
+				<label>Pin:
+					<h:inputText value="#{clientes.pin}">></h:inputText>
+				</label>
+			</p>
+			<p>
+				<label>Cantidad:
+					<h:inputText value="#{clientes.retiro}">></h:inputText>
+				</label>
+			</p>
+			<h:commandButton value="validar" actionListener="#{clientes.validar}"></h:commandButton>
+		</h:form>	
+		<p>
+		<div>Nuevo saldo: <h:outputLabel value="#{clientes.saldo}"></h:outputLabel></div>
+	</p>
+	
+	</h:body>
+</html>
